@@ -1,5 +1,5 @@
 const utilisateurRouter = require('express').Router();
-const UtilisateurController = require('../controllers/administrations/Utilisateur_controller');
+const UtilisateurController = require('../controllers/administrations/utilisateurController');
 
 const verifToken = require('../middlewares/verifyToken');
 const checkPermission = require('../middlewares/checkPermission');

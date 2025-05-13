@@ -1,8 +1,8 @@
 const yup = require('yup');
-const Profil = require('../../db/models/Profil_model');
+const Profil = require('../../db/models/profilModel');
 const { ValidationError } = require('sequelize');
-const Role = require('../../db/models/Role_model');
-const ProfilRole = require('../../db/models/Profil_role_model');
+const Role = require('../../db/models/roleModel');
+const ProfilRole = require('../../db/models/profilRoleModel');
 
 /**
  * Recupérer la liste des profils

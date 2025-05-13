@@ -1,5 +1,5 @@
 const profilsRouter = require('express').Router();
-const ProfilController = require('../controllers/administrations/Profil_controller');
+const ProfilController = require('../controllers/administrations/profilController');
 const verifToken = require('../middlewares/verifyToken');
 
 profilsRouter.use(verifToken);

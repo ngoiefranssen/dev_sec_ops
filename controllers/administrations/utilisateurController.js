@@ -1,10 +1,10 @@
 const yup = require('yup');
-const Utilisateur = require('../../db/models/Utilisateur_model');
-const ProfilUtilisateur = require('../../db/models/Profil_utilisateur_model')
+const Utilisateur = require('../../db/models/utilisateurModel');
+const ProfilUtilisateur = require('../../db/models/profilUtilisateurModel')
 const bcrypt = require('bcrypt');
 const { ValidationError } = require('sequelize');
 const Upload = require('../../utils/Upload');
-const Profil = require('../../db/models/Profil_model');
+const Profil = require('../../db/models/profilModel');
 
 /**
  * Recupérer la liste des utilisateurs

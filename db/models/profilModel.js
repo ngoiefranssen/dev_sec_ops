@@ -1,9 +1,9 @@
 const { DataTypes } = require('sequelize');
 const sequelize = require('./index').sequelize;
-const Role = require('./Role_model');
-const ProfilRole = require('./Profil_role_model');
-const Utilisateur = require('./Utilisateur_model');
-const ProfilUtilisateur = require('./Profil_utilisateur_model');
+const Role = require('./roleModel');
+const ProfilRole = require('./profilRoleModel');
+const Utilisateur = require('./utilisateurModel');
+const ProfilUtilisateur = require('./profilUtilisateurModel');
 
 const Profil = sequelize.define('profils', {
     PROFIL_ID: {

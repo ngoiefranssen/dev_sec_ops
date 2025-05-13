@@ -17,7 +17,7 @@ if (isHttps) {
   server = http.createServer(app);
 }
 
-server.listen(process.env.PORT || 4000);
+server.listen(process.env.PORT || 7000);
 
 server.on("listening", () => {
   console.log(

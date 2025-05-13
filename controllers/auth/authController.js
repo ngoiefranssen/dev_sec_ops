@@ -1,10 +1,10 @@
 const yup = require("yup");
-const Utilisateur = require("../db/models/Utilisateur_model");
+const Utilisateur = require("../../db/models/utilisateurModel");
 const jwt = require('jsonwebtoken')
 const bcrypt = require("bcrypt");
 const { ValidationError } = require("sequelize");
-const Profil = require("../db/models/Profil_model");
-const Role = require("../db/models/Role_model");
+const Profil = require("../../db/models/profilModel");
+const Role = require("../../db/models/roleModel");
 
 /**
  * Authentifier un utilisateur

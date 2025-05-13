@@ -1,7 +1,7 @@
 const yup = require('yup');
 const { ValidationError } = require('sequelize');
-const Role = require('../../db/models/Role_model');
-const ProfilRole = require('../../db/models/Profil_role_model');
+const Role = require('../../db/models/roleModel');
+const ProfilRole = require('../../db/models/profilRoleModel');
 /**
  * Recupérer la liste des roles
  * @param {Express.Request} req

@@ -1,10 +1,10 @@
 const { DataTypes } = require('sequelize');
 const sequelize = require('./index').sequelize;
-const Profil = require('./Profil_model');
-const Role = require('./Role_model');
+const Profil = require('./profilModel');
+const Utilisateur = require('./utilisateurModel');
 
-const ProfilRole = sequelize.define('profil_role', {
-    PROFIL_ROLE_ID: {
+const ProfilUtilisateur = sequelize.define('profil_utilisateur', {
+    PROFIL_USER_ID: {
         type: DataTypes.INTEGER,
         primaryKey: true,
         autoIncrement: true,
@@ -17,16 +17,16 @@ const ProfilRole = sequelize.define('profil_role', {
             key: 'PROFIL_ID',
         },
     },
-    ROLE_ID: {
+    USER_ID: {
         type: DataTypes.INTEGER,
         references: {
-            model: Role,
-            key: 'ROLE_ID',
+            model: Utilisateur,
+            key: 'USER_ID',
         },
     },
 }, {
     timestamps: false,
-    tableName: 'profil_role'
+    tableName: 'profil_utilisateur'
 });
 
-module.exports = ProfilRole;
+module.exports = ProfilUtilisateur;

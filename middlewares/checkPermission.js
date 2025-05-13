@@ -1,6 +1,6 @@
-const Profil = require('../db/models/Profil_model');
-const Role = require('../db/models/Role_model');
-const Utilisateur = require('../db/models/Utilisateur_model')
+const Profil = require('../db/models/profilModel');
+const Role = require('../db/models/roleModel');
+const Utilisateur = require('../db/models/utilisateurModel')
 
 /**
  * @author franssen@mediabox.bi

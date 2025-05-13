@@ -18,7 +18,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(fileUpload());
 
-app.use('/api/', routesProvider);
+app.use('/secops/api/v1/', routesProvider);
 
 app.all('*', async (_, res) => res.status(404).json({ message: 'Not Found', httpStatus: 404, data: null }))
 

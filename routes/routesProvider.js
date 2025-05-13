@@ -1,9 +1,9 @@
 const mainRouter = require('express').Router();
 
-const utilisateursRoutes = require('./utilisateur_routes')
-const authRoutes = require('./auth_routes');
-const profilsRouter = require('./profil_routes');
-const rolesRouter = require('./role_routes');
+const utilisateursRoutes = require('./utilisateurRoutes')
+const authRoutes = require('./authRoutes');
+const profilsRouter = require('./profilRoutes');
+const rolesRouter = require('./roleRoutes');
 
 mainRouter.use(authRoutes);
 mainRouter.use(utilisateursRoutes);

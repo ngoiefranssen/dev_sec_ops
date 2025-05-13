@@ -1,5 +1,5 @@
 const rolesRouter = require('express').Router();
-const RoleController = require('../controllers/administrations/Role_controller');
+const RoleController = require('../controllers/administrations/roleController');
 const verifToken = require('../middlewares/verifyToken');
 
 rolesRouter.use(verifToken);
