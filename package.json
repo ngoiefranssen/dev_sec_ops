@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "start": "nodemon server.js",
-    "test": "cross-env NODE_ENV=test jest --testTimeout=10000 --verbose"
+    "test": "cross-env NODE_ENV=test jest --testTimeout=10000 --verbose",
+    "test:watch": "jest --watch"
   },
   "author": "franssen@mediabox.bi",
   "license": "ISC",

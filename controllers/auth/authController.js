@@ -2,7 +2,6 @@ const yup = require("yup");
 const Utilisateur = require("../../db/models/utilisateurModel");
 const jwt = require('jsonwebtoken')
 const bcrypt = require("bcrypt");
-const { ValidationError } = require("sequelize");
 const Profil = require("../../db/models/profilModel");
 const Role = require("../../db/models/roleModel");
 
